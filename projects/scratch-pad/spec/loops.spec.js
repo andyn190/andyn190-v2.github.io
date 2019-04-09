@@ -50,21 +50,6 @@ describe("#loops", function () {
         });
     });
 
-    describe('printObjectValues()', function () {
-        it('should call log with the values in the Object', function () {
-            printObjectValues(object);
-            expect(console.log.firstCall.calledWith('one')).to.be.true;
-            expect(console.log.secondCall.calledWith('two')).to.be.true;
-            expect(console.log.thirdCall.calledWith('three')).to.be.true;
-        });
-        it('should call log with the values in the Object', function () {
-            printObjectValues(objectTwo);
-            expect(console.log.firstCall.calledWith(1)).to.be.true;
-            expect(console.log.secondCall.calledWith(2)).to.be.true;
-            expect(console.log.thirdCall.calledWith(3)).to.be.true;
-        });
-    });
-
     describe('getObjectKeys()', function () {
         it('should return an Array containing the Object keys', function () {
             expect(getObjectKeys(object)).to.eql(['one', 'two', 'three']);
@@ -87,6 +72,30 @@ describe("#loops", function () {
             expect(console.log.firstCall.calledWith('one')).to.be.true;
             expect(console.log.secondCall.calledWith('two')).to.be.true;
             expect(console.log.thirdCall.calledWith('three')).to.be.true;
+        });
+    });
+    
+    describe('getObjectValues()', function () {
+        it('should return an Array containing the Object values', function () {
+            expect(getObjectValues(object)).to.eql(['one', 'two', 'three']);
+        });
+        it('should return an Array containing the Object values', function () {
+            expect(getObjectValues(objectTwo)).to.eql([1, 2, 3, 4]);
+        });
+    });
+    
+    describe('printObjectValues()', function () {
+        it('should call log with the values in the Object', function () {
+            printObjectValues(object);
+            expect(console.log.firstCall.calledWith('one')).to.be.true;
+            expect(console.log.secondCall.calledWith('two')).to.be.true;
+            expect(console.log.thirdCall.calledWith('three')).to.be.true;
+        });
+        it('should call log with the values in the Object', function () {
+            printObjectValues(objectTwo);
+            expect(console.log.firstCall.calledWith(1)).to.be.true;
+            expect(console.log.secondCall.calledWith(2)).to.be.true;
+            expect(console.log.thirdCall.calledWith(3)).to.be.true;
         });
     });
 

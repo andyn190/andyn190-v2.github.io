@@ -14,9 +14,9 @@
  */
 function print(value) {
   // YOUR CODE BELOW HERE //
-  
+  // print value
+  // using console.log
   console.log(value);
-  
   // YOUR CODE ABOVE HERE //
 }
 

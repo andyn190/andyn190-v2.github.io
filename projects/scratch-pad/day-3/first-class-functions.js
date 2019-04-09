@@ -13,9 +13,9 @@
  */
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    return (value) => {
-        return base < value;
-    };
+    
+    
+    
     
     // YOUR CODE ABOVE HERE //
 }
@@ -41,10 +41,11 @@ function createLessThanFilter(base) {
  */
 function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
-    
+    // return a function that takes a string
+    // and checks the first character of the string to the startsWith character
+    return function(string) {
+        return startsWith.toUpperCase() === string[0].toUpperCase();
+    }
     // YOUR CODE ABOVE HERE //
 }
 
@@ -89,10 +90,7 @@ function modifyStrings(strings, modify) {
  */
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
-    
+    return strings.every(test);
     // YOUR CODE ABOVE HERE //
 }
 

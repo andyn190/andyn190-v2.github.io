@@ -32,6 +32,9 @@ function isArray(value) {
 function isObject(value) {
     // YOUR CODE BELOW HERE //
     
+    
+    
+    
     // YOUR CODE ABOVE HERE //
 }
 
@@ -71,14 +74,10 @@ function isCollection(value) {
  */ 
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
-    if (Array.isArray(value)) {
-        return 'array';
-    } else if (value instanceof Date) {
-        return 'date';
-    } else if(value === null) {
-        return 'null';
-    }
-    return typeof value;
+    
+    
+    
+    
     // YOUR CODE ABOVE HERE //
 }
 

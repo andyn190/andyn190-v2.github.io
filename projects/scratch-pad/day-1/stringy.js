@@ -14,9 +14,7 @@
  */
 function length(string) {
     // YOUR CODE BELOW HERE //
-    
-    return string.length; 
-
+    console.log(string, 'this is from the length function on stringy.js');
     // YOUR CODE ABOVE HERE //
 }
 
@@ -77,7 +75,9 @@ function toDashCase(string) {
  */
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-    return string[0].toLowerCase() === char.toLowerCase;
+
+    
+
     // YOUR CODE ABOVE HERE //
 }
 
@@ -158,7 +158,19 @@ function longest(stringOne, stringTwo) {
  */
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-    
+    // if string one is lower in alphabetical order than string two
+    if (stringOne < stringTwo) {
+        // return 1
+        return 1;
+    // if string one is greater in aphabetical order than string two
+    } else if (stringOne > stringTwo) {
+        // return -1
+        return -1
+        // if strings are the same
+    } else {
+        //return 0
+        return 0
+    }
     // YOUR CODE ABOVE HERE //
 }
 
@@ -172,6 +184,10 @@ function sortAscending(stringOne, stringTwo) {
  */
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
+
+
+
+
     // YOUR CODE ABOVE HERE //
 }
 
